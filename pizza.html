@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pizza Online</h1>
+    </header>
+    <main>
+        <section id="pizza-section">
+            <h2>Elige tu pizza</h2>
+            <div class="pizza-option">
+                <img src="pizza1.jpg" alt="Pizza Margarita">
+                <h3>Pizza Margarita</h3>
+                <p>Tomate, mozzarella y albahaca</p>
+                <label for="margarita-small">Pequeña</label>
+                <input type="radio" id="margarita-small" name="margarita-size" value="small" data-price="6">
+                <label for="margarita-medium">Mediana</label>
+                <input type="radio" id="margarita-medium" name="margarita-size" value="medium" data-price="8">
+                <label for="margarita-large">Grande</label>
+                <input type="radio" id="margarita-large" name="margarita-size" value="large" data-price="10">
+            </div>
+            <div class="pizza-option">
+                <img src="pizza2.jpg" alt="Pizza Hawaiana">
+                <h3>Pizza Hawaiana</h3>
+                <p>Tomate, mozzarella, piña y jamón</p>
+                <label for="hawaiana-small">Pequeña</label>
+                <input type="radio" id="hawaiana-small" name="hawaiana-size" value="small" data-price="7">
+                <label for="hawaiana-medium">Mediana</label>
+                <input type="radio" id="hawaiana-medium" name="hawaiana-size" value="medium" data-price="9">
+                <label for="hawaiana-large">Grande</label>
+                <input type="radio" id="hawaiana-large" name="hawaiana-size" value="large" data-price="12">
+            </div>
+            <button id="add-to-cart">Añadir al carrito</button>
+        </section>
+        <section id="cart-section">
+            <h2>Carrito</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: <span id="total-price">0</span>€</p>
+            <button id="checkout">Comprar</button>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
