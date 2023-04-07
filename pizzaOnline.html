@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ordenar Pizzas Online</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>Ordenar Pizzas Online</h1>
+	</header>
+	<main>
+		<section id="pizza-selection">
+			<h2>Elige tu pizza</h2>
+			<p>Selecciona la pizza que deseas:</p>
+			<label for="pizza-type">Tipo de pizza:</label>
+			<select id="pizza-type">
+				<option value="cheese">Queso</option>
+				<option value="pepperoni">Pepperoni</option>
+				<option value="vegetarian">Vegetariana</option>
+			</select>
+			<br>
+			<label for="pizza-size">Tamaño:</label>
+			<input type="radio" name="size" id="small" value="small">
+			<label for="small">Pequeña</label>
+			<input type="radio" name="size" id="medium" value="medium">
+			<label for="medium">Mediana</label>
+			<input type="radio" name="size" id="large" value="large">
+			<label for="large">Grande</label>
+			<br>
+			<label for="toppings">Toppings:</label>
+			<input type="checkbox" name="toppings" id="mushrooms" value="mushrooms">
+			<label for="mushrooms">Champiñones</label>
+			<input type="checkbox" name="toppings" id="peppers" value="peppers">
+			<label for="peppers">Pimientos</label>
+			<input type="checkbox" name="toppings" id="olives" value="olives">
+			<label for="olives">Aceitunas</label>
+			<br>
+			<label for="quantity">Cantidad:</label>
+			<input type="number" id="quantity" min="1" max="10" value="1">
+			<br>
+			<button id="add-to-cart">Añadir al carrito</button>
+		</section>
+		<section id="shopping-cart">
+			<h2>Carrito de compras</h2>
+			<ul id="cart-items">
+			</ul>
+			<p>Total: $<span id="total-price">0</span></p>
+			<button id="checkout">Realizar pedido</button>
+		</section>
+	</main>
+	<script src="app.js"></script>
+</body>
+</html>
